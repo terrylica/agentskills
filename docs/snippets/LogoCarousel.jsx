@@ -325,8 +325,8 @@ export const LogoCarousel = () => {
           {row1Doubled.map((logo, i) => (
             <div key={`${logo.name}-${i}`} style={{ width: 150 * (logo.scale || 1), maxWidth: "100%" }}>
               <a href={logo.url} className="block no-underline border-none w-full h-full">
-                <img className="block dark:hidden object-contain w-full h-full" src={logo.lightSrc} alt={logo.name} noZoom />
-                <img className="hidden dark:block object-contain w-full h-full" src={logo.darkSrc} alt={logo.name} noZoom />
+                <img className="block dark:hidden object-contain w-full h-full !my-0" src={logo.lightSrc} alt={logo.name} noZoom />
+                <img className="hidden dark:block object-contain w-full h-full !my-0" src={logo.darkSrc} alt={logo.name} noZoom />
               </a>
             </div>
           ))}
@@ -337,8 +337,8 @@ export const LogoCarousel = () => {
           {row2Doubled.map((logo, i) => (
             <div key={`${logo.name}-${i}`} style={{ width: 150 * (logo.scale || 1), maxWidth: "100%" }}>
               <a href={logo.url} className="block no-underline border-none w-full h-full">
-                <img className="block dark:hidden object-contain w-full h-full" src={logo.lightSrc} alt={logo.name} noZoom />
-                <img className="hidden dark:block object-contain w-full h-full" src={logo.darkSrc} alt={logo.name} noZoom />
+                <img className="block dark:hidden object-contain w-full h-full !my-0" src={logo.lightSrc} alt={logo.name} noZoom />
+                <img className="hidden dark:block object-contain w-full h-full !my-0" src={logo.darkSrc} alt={logo.name} noZoom />
               </a>
             </div>
           ))}
